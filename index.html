@@ -10,8 +10,9 @@
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fontawesome.min.css"/>
+  <link rel="stylesheet" href="css/solid.min.css">
+  <link rel="stylesheet" href="css/brands.min.css">
   <!-- CSS Files -->
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/now-ui-kit.min.css"/>
@@ -38,9 +39,32 @@
           </a>
         </div>
         <h3 class="title">About Me</h3>
-        <h5 class="description">因為想學一技之長而跑去學電腦程式語言，學著學著發現原來程式語言能應用在許多方面，覺得相當有趣，因此決定朝程式語言方面持續深造學習。</h5>
+        <h5 class="description">因為想學一技之長而跑去學電腦程式語言，學著學著發現原來程式語言能應用在許多方面，覺得相當有趣，目前正在程式語言方面持續學習。</h5>
         <h3 class="title">Job Experience</h3>
         <div class="row">
+          <div class="card card-style wow fadeInUp">
+            <div class="card-body">
+              <div class="card-head">
+                <h4 class="card-title">凡達科技有限公司</h4>
+                <h5 class="card-subtitle text-muted">軟體工程師 一年半</h5>
+              </div>
+              <div class="card-text">
+                <h5>工作內容</h5>
+                <ul>
+                  <li>使用 Webform 及 MVC 開發新專案</li>
+                  <li>與客戶討論需求及設計 UI</li>
+                  <li>現有專案的問題追蹤排除、修正、優化</li>
+                  <li>資料庫規劃</li>
+                  <li>技術文件撰寫</li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <h5>
+                  <a href="html/job2.html">專案經歷</a>
+                </h5>
+              </div>
+            </div>
+          </div>
           <div class="card card-style wow fadeInUp">
             <div class="card-body">
               <div class="card-head">
@@ -55,13 +79,18 @@
                   <li>python 機器人製作</li>
                 </ul>
               </div>
+              <div class="card-text">
+                <h5>
+                  <a href="html/job1.html">專案經歷</a>
+                </h5>
+              </div>
             </div>
           </div>
-          <div class="card card-style wow fadeInUp" data-wow-delay=".5s">
+          <!-- <div class="card card-style wow fadeInUp" data-wow-delay=".5s">
             <div class="card-body">
               <div class="card-head">
                 <h4 class="card-title">鴻昱國際科技有限公司</h4>
-                <h5 class="card-subtitle text-muted">作業員 半年以上</h5>
+                <h5 class="card-subtitle text-muted">作業員 11個月</h5>
               </div>
               <div class="card-text">
                 <h5>工作內容</h5>
@@ -88,7 +117,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
         <div class="row">
           <div class="ml-auto mr-auto">
             <h4 class="title text-center">My Portfolio</h4>
@@ -147,7 +176,7 @@
                     <img src="img/zen_garden.PNG" class="img-raised box-image">
                     <h2 class="box-h1">Zen Garden</h2>
                   </div>
-                  <div class="col-md-5 box wow fadeInDown" data-wow-delay="1.5s" onclick="js('name_card')">
+                  <div class="col-md-5 box wow fadeInDown" data-wow-delay="1.5s" onclick="js('business_card')">
                     <img src="img/name_card.png" class="img-raised box-image">
                     <h2 class="box-h1">名片</h2>
                   </div>
@@ -183,23 +212,33 @@
               <h2 class="title text-center p-0">Vue.js</h2>
               <div class="col-md-12">
                 <div class="row">
-                  <div class="col-md-5 box wow fadeInDown" onclick="vuejs('Pomodoro')">
+                  <div class="col-md-5 box wow fadeInDown" onclick="js('Pomodoro')">
                     <img src="img/pomodoro.jpg" class="img-raised box-image">
                     <h1 class="box-h1">番茄鐘</h1>
                   </div>
-                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".3s" onclick="vuejs('vue_photo')">
+                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".3s" onclick="js('vue_photo')">
                     <img src="img/photo_album.jpg" class="img-raised box-image">
                     <h1 class="box-h1">線上相簿前端</h1>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".6s" onclick="vuejs('project')">
-                    <img src="img/ice_cream_shop.jpg" class="img-raised box-image">
-                    <h2 class="box-h1">艸頭黃前端</h2>
+                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".6s" onclick="js('draw')">
+                    <img src="img/draw.jpg" class="img-raised box-image">
+                    <h2 class="box-h1">抽獎</h2>
                   </div>
-                  <!-- <div class="col-md-5 box wow fadeInDown" data-wow-delay="1.5s" onclick="vuejs('project')">
-                    <img src="img/ice_cream_shop.jpg" class="img-raised box-image">
-                    <h2 class="box-h1">艸頭黃前端</h2>
+                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".6s" onclick="js('connect_sql')">
+                    <img src="img/code.jpg" class="img-raised box-image">
+                    <h2 class="box-h1">Connect SQL Code</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 box wow fadeInDown" onclick="js('NPOIExcel')">
+                    <img src="img/code.jpg" class="img-raised box-image">
+                    <h1 class="box-h1">NPOI Excel Code</h1>
+                  </div>
+                  <!-- <div class="col-md-5 box wow fadeInDown" data-wow-delay=".3s" onclick="js('vue_photo')">
+                    <img src="img/photo_album.jpg" class="img-raised box-image">
+                    <h1 class="box-h1">線上相簿前端</h1>
                   </div> -->
                 </div>
               </div>
@@ -208,19 +247,19 @@
               <h2 class="title text-center p-0">Node.js</h2>
               <div class="col-md-12">
                 <div class="row">
-                  <div class="col-md-5 box wow fadeInDown" onclick="node('node_line')">
+                  <div class="col-md-5 box wow fadeInDown" onclick="js('node_line')">
                     <img src="img/node_line.jpg" class="img-raised box-image">
                     <h1 class="box-h1">LINE 電影查詢機器人</h1>
                   </div>
-                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".3s" onclick="node('vue_photo/tree/backend')">
+                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".3s" onclick="js('vue_photo/tree/backend')">
                     <img src="img/node_photo_album.jpg" class="img-raised box-image">
                     <h1 class="box-h1">線上相簿後端</h1>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".6s" onclick="node('project/tree/back')">
-                    <img src="img/node_ice_cream_shop.jpg" class="img-raised box-image">
-                    <h1 class="box-h1">艸頭黃後端</h1>
+                  <div class="col-md-5 box wow fadeInDown" data-wow-delay=".6s" onclick="js('game_api')">
+                    <img src="img/api.jpg" class="img-raised box-image">
+                    <h1 class="box-h1">遊戲 API</h1>
                   </div>
                   <!-- <div class="col-md-5 box wow fadeInDown" data-wow-delay="1.5s" onclick="node('project/tree/back')">
                     <img src="img/node_ice_cream_shop.jpg" class="img-raised box-image">
@@ -269,24 +308,12 @@
                     mobile:       true,
                     live:         true
                   })
-    wow.init();    
+    wow.init();
+
     function js (name) {
-      const file_name = 
-      [
-        'ocean_theme_clock',
-        'hit_zombies',
-        'rescue_money',
-        'turn_chess',
-        'zen_garden',
-        'name_card'
-      ]
-      for (let i = 0; i < file_name.length; i++) {
-        if (name == file_name[i]) {
-          window.open('https://github.com/laura-chou/' + file_name[i]);
-          break
-        }
-      }
+      window.open('https://github.com/laura-chou/' + name);
     }
+
     function designimg (name) {
       const file_name = [
       'photoshop', 
@@ -300,33 +327,7 @@
       ]
       for (let i = 0; i < file_name.length; i++) {
         if (name == file_name[i]) {
-          window.open('https://drive.google.com/file/d/' + file_url[i] + '/view?usp=sharing');
-          break
-        }
-      }
-    }
-    function node (name) {
-      const file_name = [
-      'node_line',
-      'vue_photo/tree/backend',
-      'project/tree/back'
-      ]
-      for (let i = 0; i < file_name.length; i++) {
-        if (name == file_name[i]) {
-          window.open('https://github.com/laura-chou/' + file_name[i]);
-          break
-        }
-      }
-    }
-    function vuejs (name) {
-      const file_name = [
-      'Pomodoro',
-      'vue_photo',
-      'project'
-      ]
-      for (let i = 0; i < file_name.length; i++) {
-        if (name == file_name[i]) {
-          window.open('https://github.com/laura-chou/' + file_name[i]);
+          window.open('https://drive.google.com/file/d/' + file_url[i] + '/view');
           break
         }
       }

@@ -49,7 +49,7 @@
 }
 .card-style {
     width: 20rem;
-    height: 20rem;
+    height: 23rem;
 }
 .card-style:hover {
     transform: scale(1.1)
@@ -60,3 +60,49 @@
 .card-text {
     height: 10rem;
 }
+.card-text a {
+    color: #CE0000;
+}
+
+.btn-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) !important;
+    font-size: 30px !important;
+    width: auto !important;
+}
+
+.blockquote:nth-child(odd) {
+    border: thick double#36DBA6;
+}
+.blockquote:nth-child(even) {
+    border: thick double #32a1ce;
+}
+.blockquote a {
+    color: #2c2c2c;
+}
+.container h3 {
+    text-align: center;
+}
+.blockquote table tr th:nth-child(1) {
+    width: 40%;
+}
+.blockquote table tr th:nth-child(2) {
+    width: 60%;
+}
+.blockquote table tbody tr {
+    background: #F5FFFA;
+}
+.blockquote table tbody tr:hover {
+    background:#ebf9f2;
+}
+.footer{
+    position: relative;
+}
+#go_top{
+    position: absolute;
+    right: 1%;
+    top: -50%
+}
+
